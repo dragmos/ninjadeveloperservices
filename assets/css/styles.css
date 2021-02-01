@@ -1,11 +1,10 @@
 /*Variables*/
-:root {
-  --header-spacing: 5rem;
-}
+
 
 /*Styles*/
 * {
   box-sizing: border-box;
+  transition: all .5s ease-in;
 }
 
 html, body {
@@ -28,14 +27,12 @@ body {
   overflow-x: hidden;
 }
 
-/*Hastag scroll hack*/
-section { 
-  margin-top: - var(--header-spacing); 
-  padding-top: var(--header-spacing); 
-}
-
 .btn {
   border-radius: 0;
+}
+
+.navbar {
+  background: transparent;
 }
 
 .header {
@@ -53,7 +50,7 @@ section {
   text-align: center;
 }
 
-.header-video {
+.header-img {
   width: 100%;
   height: 100vh;
   overflow: hidden;
@@ -61,17 +58,12 @@ section {
 
 .header-position {
   position: absolute;
-  top: 68px;
+  top: 0;
   left: 0;
 }
 
-.margin-video {
-  margin-top: 2.5rem;
-}
-
-.header-video video {
+.header-img img {
   width: 100%;
-  min-width: 100%;
 }
 
 .header-overlay {
@@ -79,7 +71,7 @@ section {
   width: 100vw;
   background: #303952;
   z-index: 1;
-  opacity: .85;
+  opacity: .75;
 }
 
 .header-content {
@@ -95,18 +87,4 @@ section {
   font-size: 1.5rem;
   display: block;
   padding-bottom: 2rem;
-}
-
-@media (max-width: 960px) {
-  .content {
-    padding: 0 3rem 0 3rem;
-  }
-}
-
-@media (max-width: 350px) {
-  .header-video video {
-    width: none;
-    min-width: none;
-    max-height: 100%;
-  }
 }
