@@ -1,12 +1,3 @@
-// Fixes...
-window.scrollTo({top:0})
-
-if (window.innerWidth < 294) {
-  document.querySelector(".header-overlay").style.height =  document.getElementById("ninja-developer").clientHeight + "px"
-}
-
-
-
 // Functions
 function scroll(hash) {
   var topPos = 0
