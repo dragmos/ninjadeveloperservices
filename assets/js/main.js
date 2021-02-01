@@ -1,3 +1,5 @@
+window.scrollTo({top:0})
+
 // Functions
 function scroll(hash) {
   var topPos = 0
