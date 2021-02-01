@@ -1,3 +1,9 @@
+/*Variables*/
+:root {
+  --header-spacing: 5rem;
+}
+
+/*Styles*/
 * {
   box-sizing: border-box;
 }
@@ -22,9 +28,10 @@ body {
   overflow-x: hidden;
 }
 
+/*Hastag scroll hack*/
 section { 
-  margin-top: -5rem; 
-  padding-top: 5rem; 
+  margin-top: - var(--header-spacing); 
+  padding-top: var(--header-spacing); 
 }
 
 .btn {
@@ -63,8 +70,8 @@ section {
 }
 
 .header-video video {
+  width: 100%;
   min-width: 100%;
-  min-height: 100%;
 }
 
 .header-overlay {
@@ -94,9 +101,12 @@ section {
   .content {
     padding: 0 3rem 0 3rem;
   }
-  
+}
+
+@media (max-width: 350px) {
   .header-video video {
-    width: 100%;
-    height: none;
+    width: none;
+    min-width: none;
+    max-height: 100%;
   }
 }
