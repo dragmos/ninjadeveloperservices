@@ -28,10 +28,10 @@ document.querySelectorAll("[href^='#']").forEach(el => {
 // Scrolling
 document.addEventListener('scroll', function() {
   if (window.scrollY === 0) {
-    document.querySelector("nav").classList.add("border-0")
+    document.querySelector("nav").classList.add("border-bottom")
     document.querySelector("nav").classList.remove("bg-dark")
     return
   }
-  document.querySelector("nav").classList.remove("border-0")
+  document.querySelector("nav").classList.remove("border-bottom")
   document.querySelector("nav").classList.add("bg-dark")
 })
