@@ -11,9 +11,39 @@ function scroll(hash) {
   window.scrollTo({ top: topPos, behavior: 'smooth' })
 }
 
+function toggleNavbarOpacityIfIsOnTop() {
+  var isOpen = document.getElementById("nav-mobile").classList.contains("d-block")
+  
+  if (isOpen) return
+  
+  if (window.scrollY === 0) {
+    document.querySelector("nav").classList.add("border-bottom")
+    document.querySelector("nav").classList.remove("bg-dark")
+    document.querySelector("nav").classList.remove("navbar-border-dark")
+    document.querySelector("nav").classList.add("navbar-border-white")
+    return
+  }
+  document.querySelector("nav").classList.remove("border-bottom")
+  document.querySelector("nav").classList.add("bg-dark")
+  document.querySelector("nav").classList.add("navbar-border-dark")
+}
+
 // Navbar
 document.getElementById("nav-btn").addEventListener("click", () => {
-  document.getElementById("nav-mobile").classList.toggle("d-block")
+  var isOpen = document.getElementById("nav-mobile").classList.toggle("d-block")
+  if (isOpen) {
+    document.querySelector("nav").classList.add("bg-dark")
+    document.querySelector("nav").classList.add("navbar-border-dark")
+    return
+  }
+  toggleNavbarOpacityIfIsOnTop()
+})
+document.addEventListener('click', function(e) {
+  var isClickInside = document.querySelector(".navbar").contains(e.target)
+
+  if (!isClickInside) {
+    document.getElementById("nav-mobile").classList.remove("d-block")
+  }
 })
 
 // Scrolling (links)
@@ -25,13 +55,8 @@ document.querySelectorAll("[href^='#']").forEach(el => {
   })
 })
 
-// Scrolling
+// Scrolling change styles on top
 document.addEventListener('scroll', function() {
-  if (window.scrollY === 0) {
-    document.querySelector("nav").classList.add("border-bottom")
-    document.querySelector("nav").classList.remove("bg-dark")
-    return
-  }
-  document.querySelector("nav").classList.remove("border-bottom")
-  document.querySelector("nav").classList.add("bg-dark")
+  toggleNavbarOpacityIfIsOnTop()
 })
+

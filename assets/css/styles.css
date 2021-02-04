@@ -1,5 +1,4 @@
 /*Variables*/
-
 /*Styles*/
 * {
   transition: all .3s ease-in;
@@ -26,8 +25,8 @@ body {
 }
 
 section {
-  margin-top: -4.5rem; 
-  padding-top: 4.5rem; 
+  margin-top: -4.5rem;
+  padding-top: 4.5rem;
 }
 
 button.navbar-toggler {
@@ -42,9 +41,18 @@ h2 {
   margin: 2.5rem 0;
 }
 
+.navbar-border-white {
+  border-bottom: 1px solid #ccc !important;
+}
+
+.navbar-border-dark {
+  border-bottom: 1px solid #27292b !important;
+}
+
 .text-white {
   color: whitesmoke !important;
 }
+
 .btn {
   border-radius: 0;
 }
@@ -63,7 +71,7 @@ h2 {
 header.masthead {
   height: 100%;
   width: 100%;
-  background: linear-gradient(to bottom, rgba(48, 57, 82, 0.8) 0%, rgba(48, 57, 82, 0.8) 100%), url("../../assets/img/ninja-developer.png");
+  background: linear-gradient(to bottom, rgba(77, 92, 135, 0.5) 0%, rgba(48, 57, 82, 0.5) 100%), url("../../assets/img/ninja-developer-final.jpg");
   background-position: none;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -74,6 +82,16 @@ header.masthead h1 {
   font-size: 2.25rem;
 }
 
+@media (min-width: 768px) {
+  header.masthead {
+    background: linear-gradient(to bottom, rgba(77, 92, 135, 0.8) 0%, rgba(48, 57, 82, 0.8) 100%), url("../../assets/img/ninja-developer-final.jpg");
+    background-position: none;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+  }
+}
+
 @media (min-width: 992px) {
   header.masthead {
     height: 100vh;
@@ -81,13 +99,16 @@ header.masthead h1 {
     padding-top: 4.5rem;
     padding-bottom: 0;
   }
+
   header.masthead p {
     font-size: 1.15rem;
   }
+
   header.masthead h1 {
     font-size: 3rem;
   }
 }
+
 @media (min-width: 1200px) {
   header.masthead h1 {
     font-size: 3.5rem;
@@ -99,3 +120,65 @@ header.masthead h1 {
     background-position: right;
   }
 }
+
+/* Img animation */
+.fadein {
+  /* margin-top: 25px;
+  font-size: 21px;
+  text-align: center; */
+  animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  /* Firefox */
+  -webkit-animation: fadein 2s;
+  /* Safari and Chrome */
+  -o-animation: fadein 2s;
+  /* Opera */
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadein {
+
+  /* Firefox */
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein {
+
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadein {
+
+  /* Opera */
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+  /* Maquetar boton color feo fuera*/
