@@ -28,7 +28,7 @@ function toggleNavbarOpacityIfIsOnTop() {
   document.querySelector("nav").classList.add("navbar-border-dark")
 }
 
-// Navbar
+// Navbar button toggle
 document.getElementById("nav-btn").addEventListener("click", () => {
   var isOpen = document.getElementById("nav-mobile").classList.toggle("d-block")
   if (isOpen) {
@@ -38,6 +38,8 @@ document.getElementById("nav-btn").addEventListener("click", () => {
   }
   toggleNavbarOpacityIfIsOnTop()
 })
+
+// Close navbar on click outside (mobile)
 document.addEventListener('click', function(e) {
   var isClickInside = document.querySelector(".navbar").contains(e.target)
 
@@ -51,7 +53,7 @@ document.querySelectorAll("[href^='#']").forEach(el => {
   el.addEventListener("click", (e) => {
     e.preventDefault()
     scroll(e.target.attributes.href.value)
-    document.getElementById("nav-mobile").classList.toggle("d-block")
+    document.getElementById("nav-mobile").classList.remove("d-block")
   })
 })
 
