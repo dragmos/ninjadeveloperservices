@@ -57,6 +57,28 @@ ul > li {
   list-style: none;
 }
 
+svg {
+  fill: currentColor !important;
+}
+
+.logo-1 {
+  position: absolute;
+  top: 22px;
+  left: 22px;
+
+  max-width: 24px;
+  max-height: 24px;
+}
+
+.logo-2 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  
+  max-width: 48px;
+  max-height: 48px;
+}
+
 .icon {
   display: inline-block;
   max-width: 20%;
@@ -115,6 +137,16 @@ header.masthead h1 {
 }
 
 @media (min-width: 992px) {
+  .logo-1 {
+    top: 24px;
+    left: 24px;
+  }
+
+  .logo-2 {
+    top: 12px;
+    left: 12px;
+  }
+  
   header.masthead {
     height: 100vh;
     min-height: 40rem;
