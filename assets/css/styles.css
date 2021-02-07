@@ -52,6 +52,11 @@ a {
   text-decoration: inherit;
 }
 
+a:hover {
+  color: white !important;
+  text-decoration: inherit;
+}
+
 ul > li {
   max-height: 5rem;
   list-style: none;
@@ -74,11 +79,11 @@ svg {
 
 .logo-1 {
   position: absolute;
-  top: 22px;
-  left: 22px;
+  top: 25px;
+  left: 25px;
 
-  max-width: 24px;
-  max-height: 24px;
+  max-width: 18px;
+  max-height: 18px;
 }
 
 .logo-2 {
@@ -149,8 +154,8 @@ header.masthead h1 {
 
 @media (min-width: 992px) {
   .logo-1 {
-    top: 24px;
-    left: 24px;
+    top: 27px;
+    left: 27px;
   }
 
   .logo-2 {
@@ -245,5 +250,16 @@ header.masthead h1 {
     opacity: 1;
   }
 }
+
+
+.rotate {
+  -webkit-animation:spin 4s linear infinite;
+  -moz-animation:spin 4s linear infinite;
+  animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
 
   /* Maquetar boton color feo fuera*/

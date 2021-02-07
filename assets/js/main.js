@@ -85,3 +85,8 @@ document.getElementById("send-form").addEventListener("click", (e) => {
     
   }, 500)
 })
+
+document.getElementById("katana-wrapper").addEventListener("click", (e) => {
+  e.preventDefault()
+  document.getElementById("katana").classList.toggle("rotate")
+})
