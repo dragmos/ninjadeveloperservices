@@ -1,21 +1,24 @@
 // Functions
 function scroll(hash) {
   var topPos = 0
-  
+
   var value = hash === "#" ? "" : hash
-  
+
   if (value) {
     topPos = document.querySelector(value).getBoundingClientRect().top + window.pageYOffset
   }
-  
-  window.scrollTo({ top: topPos, behavior: 'smooth' })
+
+  window.scrollTo({
+    top: topPos,
+    behavior: 'smooth'
+  })
 }
 
 function toggleNavbarOpacityIfIsOnTop() {
   var isOpen = document.getElementById("nav-mobile").classList.contains("d-block")
-  
+
   if (isOpen) return
-  
+
   if (window.scrollY === 0) {
     document.querySelector("nav").classList.add("border-bottom")
     document.querySelector("nav").classList.remove("bg-dark")
@@ -62,3 +65,23 @@ document.addEventListener('scroll', function() {
   toggleNavbarOpacityIfIsOnTop()
 })
 
+// Send form
+document.getElementById("send-form").addEventListener("click", (e) => {
+  e.preventDefault()
+
+  setTimeout(() => {
+    e.target.blur()
+    
+    // TODO:
+    // Send message
+    // Check if all ok
+    // Show success or error msg
+    
+    
+    document.getElementById("form").classList.add("d-none")
+    
+    document.getElementById("msg-success").classList.remove("d-none")
+    document.getElementById("msg-success").classList.add("d-block")
+    
+  }, 500)
+})
