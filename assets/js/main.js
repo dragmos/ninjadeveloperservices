@@ -167,22 +167,18 @@ document.getElementById("katana-wrapper").addEventListener("click", function(e) 
   document.getElementById("katana").classList.toggle("rotate")
 })
 
-
-
-
-
 // // google maps
-// function initMap() {
-//   const uluru = {
-//     lat: 41.61529177652071,
-//     lng: 2.6612764388289047
-//   };
-//   const map = new google.maps.Map(document.getElementById("map"), {
-//     zoom: 6,
-//     center: uluru,
-//   });
-//   const marker = new google.maps.Marker({
-//     position: uluru,
-//     map: map,
-//   });
-// } 
+function initMap() {
+  const calella = {
+    lat: 41.61529177652071,
+    lng: 2.6612764388289047
+  };
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 6,
+    center: calella,
+  });
+  const marker = new google.maps.Marker({
+    position: calella,
+    map: map,
+  });
+} 

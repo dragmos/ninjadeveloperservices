@@ -178,6 +178,10 @@ header.masthead h1 {
   opacity: 0.85;
 }
 
+.card-header {
+  padding: 1rem;
+}
+
 .alert {
   font-size: 14px;
 }
@@ -208,10 +212,14 @@ header.masthead h1 {
     background-attachment: scroll;
     background-size: cover;
   }
+  
+  .card-header {
+    padding: .75rem 2rem;
+  }
 }
 
 #map {
-  height: 400px;
+  height: 250px;
   width: 100%;
 }
 

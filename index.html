@@ -30,10 +30,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="nav-mobile">
-        <!-- <div class="collapse navbar-collapse fixed-top" id="nav-mobile"> -->
         <ul class="navbar-nav ml-auto border-lg-top rounded-0">
-          <!-- <ul class="navbar-nav ml-auto border-lg-top list-group rounded-0"> -->
-          <!-- <li class="nav-item list-group-item bg-dark"> -->
           <li class="nav-item">
             <a class="nav-link text-white" href="#">Inicio</a>
           </li>
@@ -67,16 +64,16 @@
 
   <main class="container-xl margin-img mb-3">
     <section id="our-work">
-      <h2 class="text-center h1">Qué hacemos</h2>
+      <h2 class="text-center h1 mb-0">Qué hacemos</h2>
 
-      <div class="row mb-3">
-        <div class="col-12">
-          <h2 class="h3 mb-4">
-            Hacemos que muchos de tus potenciales clientes conozcan tu producto de diferentes maneras:
+      <div class="row">
+        <div class="col-12 mb-4">
+          <h2 class="h3 mx-3 my-5">
+            <b>Hacemos que</b> muchos de <b>tus clientes potenciales conozcan tu producto</b> de diferentes maneras:
           </h2>
           <ul>
             <li class="mb-3">
-              <b>Cuando busquen</b> el nombre de tu negocio o el de tus productos en google <b>encontarán tu web</b> y la ubicación de tu negocio para que puedan ver lo que ofreces y tenerte en cuenta.
+              <b>Cuando te busquen</b> por el nombre de tu negocio o el de tus productos en google <b>encontarán tu web</b> y la ubicación de tu negocio para que puedan ver lo que ofreces y tenerte en cuenta.
             </li>
             <li class="mb-3">
               <b>Gestionamos</b>, y creamos si es necesario, <b>tus redes sociales para buscar clientes potenciales</b> y enseñarles tus productos y ofertas.
@@ -89,7 +86,7 @@
         </div>
 
         <div class="col-12 col-lg-4">
-          <h2 class="text-center mb-5">Sitios web</h2>
+          <h2 class="text-center my-0"><u>Sitios web</u></h2>
           <ul>
             <li class="my-5 d-flex flex-row">
               <img class="icon" src="assets/icons/website.svg" alt="Aplications icon">
@@ -107,7 +104,7 @@
         </div>
 
         <div class="col-12 col-lg-4">
-          <h2 class="text-center mb-5">Marketing</h2>
+          <h2 class="text-center my-0"><u>Marketing</u></h2>
           <ul>
             <li class="my-5 d-flex flex-row">
               <img class="icon" src="assets/icons/social-media.svg" alt="Aplications icon">
@@ -125,7 +122,7 @@
         </div>
 
         <div class="col-12 col-lg-4">
-          <h2 class="text-center mb-5">Aplicaciones</h2>
+          <h2 class="text-center my-0"><u>Aplicaciones</u></h2>
           <ul>
             <li class="my-5 d-flex flex-row">
               <img class="icon" src="assets/icons/notepad.svg" alt="Aplications icon">
@@ -141,15 +138,24 @@
             </li>
           </ul>
         </div>
-      </div>
 
-      <!-- <h2 class="text-center">Cómo lo hacemos</h2> -->
+      </div>
 
     </section>
     <section id="about-us">
-      <h2 class="text-center h1">Quiénes somos</h2>
-      <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+      <h2 class="text-center h1 mt-0">Quiénes somos</h2>
+      <div class="m-3 mt-5">
+        <p>
+          <b>Somos emprendedores independientes</b>, dinámicos, con las ideas muy claras y queremos que tú también te sientas así.
+        </p>
+        <p>
+          Independientes para poder está cerca tuyo y de tus necesidades, <b>sin burocracias ni tecnicismos</b>.
+        </p>
+        <p>
+          <b>Hablémos claro</b> y llevemos tu negocio al siguiente nivel.
+        </p>
+      </div>
+
     </section>
 
     <section id="contact">
@@ -159,28 +165,28 @@
 
           <div class="card">
             <div class="card-header bg-dark">
-              <p class="text-center text-white m-0">Contáctanos para obtener más información y un presupuesto gratuito.</p>
+              <div class="text-center text-white m-0 d-inline-block">Contáctanos para obtener más información y un presupuesto gratuito.</div>
             </div>
             <form class="border rounded-bottom shadow-lg p-3">
               <div class="form-group">
                 <label for="name">Nombre</label>
                 <input type="text" class="form-control" name="name">
                 <div class="alert alert-primary mt-3 text-center d-none" name="err-name" role="alert">
-                  Debe introducir un nombre de más de 3 carateres
+                  Debes introducir un nombre de más de 3 carateres
                 </div>
               </div>
               <div class="form-group">
                 <label for="data">Email o teléfono</label>
                 <input type="text" class="form-control" name="data">
                 <div class="alert alert-primary mt-3 text-center d-none" name="err-data" role="alert">
-                  Debe introducir un email o teléfono válido
+                  Debes introducir un email o teléfono válido
                 </div>
               </div>
               <div class="form-group">
                 <label for="message">Mensaje</label>
                 <textarea class="form-control" name="message" rows="6"></textarea>
                 <div class="alert alert-primary mt-3 text-center d-none" name="err-message" role="alert">
-                  Debe escribirnos el motivo de la consulta
+                  Debes escribirnos el motivo de la consulta
                 </div>
                 <small class="form-text text-muted">Tus datos no se compartirán con terceros</small>
               </div>
@@ -197,11 +203,11 @@
         <div class="alert alert-success border rounded shadow-lg" role="alert">
           <h4 class="alert-heading mb-3 font-weight-bold">Mensaje enviado correctamente!</h4>
           <p>
-            Gracias por contactar con nosotros, le daremos respuesta lo antes posible.
+            Gracias por contactar con nosotros, te daremos respuesta lo antes posible.
           </p>
           <hr>
           <p class="mb-0">
-            Si tiene alguna otra consulta háganoslo saber.
+            Si tienes alguna otra consulta háznoslo saber.
           </p>
         </div>
       </div>
@@ -215,11 +221,11 @@
             Ha ocurrido un de conexión
           </p>
           <p>
-            Por favor póngase en contacto con nosotros mediante la información de contacto facilitada en la parte inferior de esta web.
+            Por favor ponte en contacto con nosotros mediante la información de contacto facilitada en la parte inferior de esta web.
           </p>
           <hr>
           <p class="mb-0">
-            También puede enviarnos un email directamente a nuestra dirección de email ladirecciondeemail@ladirecciondeemail.com
+            También puedes enviarnos un email directamente a nuestra dirección de email ninjadeveloperservices@protonmail.com
           </p>
         </div>
       </div>
@@ -231,29 +237,40 @@
 
     <div class="container">
 
-      <p class="text-white">
-        asd
-      </p>
-      <p class="text-white">
-        asd
-      </p>
-      <p class="text-white">
-        asd
-      </p>
-      <p class="text-white">
-        asd
-      </p>
+      <h3 class="text-white mb-4">Información de contacto</h3>
 
-      <div class="d-none d-md-block mb-3" id="map"></div>
-      <small class="text-muted">
-        Icons made by <a href="https://www.flaticon.com/authors/nikita-golubev" title="Nikita Golubev">Nikita Golubev</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
-      </small>
+      <div class="row">
+        <div class="col-md-6 col-12">
+          <small class="text-white d-block mb-3">+34 634 197 575</small>
+          <small class="text-white d-block mb-3">ninjadeveloperservices@protonmail.com</small>
+          <small class="text-white d-block mb-3">08370 Calella, Barcelona.</small>
+
+          <p class="text-white d-block mb-3">Síguenos</p>
+          <a href="#"><img class="icon mr-2 mb-3" src="assets/icons/instagram.svg" alt="instagram icon" height="32" width="32"></a>
+          <a href="#"><img class="icon mr-2 mb-3 bg-light" src="assets/icons/facebook.svg" alt="facebook icon" height="32" width="32"></a>
+          <a href="#"><img class="icon mr-2 mb-3" src="assets/icons/linkedin.svg" alt="linkedin icon" height="32" width="32"></a>
+
+
+        </div>
+        <div class="col-md-6 col-12">
+          <div class="mb-3" id="map"></div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <small class="text-muted">
+            Icons made by <a href="https://www.flaticon.com/authors/nikita-golubev" title="Nikita Golubev">Nikita Golubev</a> and <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"
+              title="Flaticon">www.flaticon.com</a>
+          </small>
+        </div>
+      </div>
     </div>
 
   </footer>
 
   <script src="assets/js/main.js" charset="utf-8"></script>
-  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrbS0o66B0VP5LZGQVI-sXPQ43yT2fkSM&callback=initMap&libraries=&v=weekly" async></script> -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrbS0o66B0VP5LZGQVI-sXPQ43yT2fkSM&callback=initMap&libraries=&v=weekly" async></script>
 
 </body>
 
