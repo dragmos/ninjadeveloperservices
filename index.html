@@ -30,7 +30,10 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="nav-mobile">
-        <ul class="navbar-nav ml-auto border-lg-top">
+        <!-- <div class="collapse navbar-collapse fixed-top" id="nav-mobile"> -->
+        <ul class="navbar-nav ml-auto border-lg-top rounded-0">
+          <!-- <ul class="navbar-nav ml-auto border-lg-top list-group rounded-0"> -->
+          <!-- <li class="nav-item list-group-item bg-dark"> -->
           <li class="nav-item">
             <a class="nav-link text-white" href="#">Inicio</a>
           </li>
@@ -73,14 +76,14 @@
           </h2>
           <ul>
             <li class="mb-3">
-              <b>Cuando busquen</b> el nombre de tu negocio o de tus productos en google <b>encontarán tu web</b> y la ubicación de tu negocio para que puedan ver lo que ofreces y tenerte en cuenta.
+              <b>Cuando busquen</b> el nombre de tu negocio o el de tus productos en google <b>encontarán tu web</b> y la ubicación de tu negocio para que puedan ver lo que ofreces y tenerte en cuenta.
             </li>
             <li class="mb-3">
               <b>Gestionamos</b>, y creamos si es necesario, <b>tus redes sociales para buscar clientes potenciales</b> y enseñarles tus productos y ofertas.
             </li>
             <li class="mb-3">
-              También <b>hacemos aplicaciones de todo tipo</b>: web, móvil, escritorio. <br>
-              Por ejemplo para llevar tus ventas al terreno online.
+              <b>También hacemos aplicaciones de todo tipo</b>: web, móvil, escritorio. <br>
+              <!-- Por ejemplo para llevar tus ventas al terreno online. -->
             </li>
           </ul>
         </div>
@@ -156,20 +159,29 @@
 
           <div class="card">
             <div class="card-header bg-dark">
-              <p class="text-center text-white m-0">Contactanos para obtener más información y un presupuesto gratuito.</p>
+              <p class="text-center text-white m-0">Contáctanos para obtener más información y un presupuesto gratuito.</p>
             </div>
             <form class="border rounded-bottom shadow-lg p-3">
               <div class="form-group">
                 <label for="name">Nombre</label>
                 <input type="text" class="form-control" name="name">
+                <div class="alert alert-primary mt-3 text-center d-none" name="err-name" role="alert">
+                  Debe introducir un nombre de más de 3 carateres
+                </div>
               </div>
               <div class="form-group">
                 <label for="data">Email o teléfono</label>
                 <input type="text" class="form-control" name="data">
+                <div class="alert alert-primary mt-3 text-center d-none" name="err-data" role="alert">
+                  Debe introducir un email o teléfono válido
+                </div>
               </div>
               <div class="form-group">
                 <label for="message">Mensaje</label>
                 <textarea class="form-control" name="message" rows="6"></textarea>
+                <div class="alert alert-primary mt-3 text-center d-none" name="err-message" role="alert">
+                  Debe escribirnos el motivo de la consulta
+                </div>
                 <small class="form-text text-muted">Tus datos no se compartirán con terceros</small>
               </div>
               <button type="submit" class="btn btn-secondary btn-block rounded" id="send-form">Enviar</button>
@@ -184,9 +196,13 @@
       <div class="col-12 col-sm-8 col-md-6 col-xl-5 mx-auto">
         <div class="alert alert-success border rounded shadow-lg" role="alert">
           <h4 class="alert-heading mb-3 font-weight-bold">Mensaje enviado correctamente!</h4>
-          <p>Gracias por contactar con nosotros, te daremos respuesta lo antes posible.</p>
+          <p>
+            Gracias por contactar con nosotros, le daremos respuesta lo antes posible.
+          </p>
           <hr>
-          <p class="mb-0">Si tienes alguna otra consulta háznoslo saber.</p>
+          <p class="mb-0">
+            Si tiene alguna otra consulta háganoslo saber.
+          </p>
         </div>
       </div>
     </div>
@@ -195,9 +211,16 @@
       <div class="col-12 col-sm-8 col-md-6 col-xl-5 mx-auto">
         <div class="alert alert-primary border rounded shadow-lg" role="alert">
           <h4 class="alert-heading mb-3 font-weight-bold">No se ha podido enviar el mensaje!</h4>
-          <p>Revisa tu conexión y vuélvelo a intentar más tarde.</p>
+          <p>
+            Ha ocurrido un de conexión
+          </p>
+          <p>
+            Por favor póngase en contacto con nosotros mediante la información de contacto facilitada en la parte inferior de esta web.
+          </p>
           <hr>
-          <p class="mb-0">También puedes enviarnos un email directamente a nuestra dirección de email ladirecciondeemail@ladirecciondeemail.com</p>
+          <p class="mb-0">
+            También puede enviarnos un email directamente a nuestra dirección de email ladirecciondeemail@ladirecciondeemail.com
+          </p>
         </div>
       </div>
     </div>
@@ -208,14 +231,29 @@
 
     <div class="container">
 
-      <p class="text-muted">
-        Icons made by <a href="https://www.flaticon.com/authors/nikita-golubev" title="Nikita Golubev">Nikita Golubev</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+      <p class="text-white">
+        asd
+      </p>
+      <p class="text-white">
+        asd
+      </p>
+      <p class="text-white">
+        asd
+      </p>
+      <p class="text-white">
+        asd
       </p>
 
+      <div class="d-none d-md-block mb-3" id="map"></div>
+      <small class="text-muted">
+        Icons made by <a href="https://www.flaticon.com/authors/nikita-golubev" title="Nikita Golubev">Nikita Golubev</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+      </small>
     </div>
+
   </footer>
 
   <script src="assets/js/main.js" charset="utf-8"></script>
+  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrbS0o66B0VP5LZGQVI-sXPQ43yT2fkSM&callback=initMap&libraries=&v=weekly" async></script> -->
 
 </body>
 
