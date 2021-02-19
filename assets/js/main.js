@@ -171,9 +171,9 @@ document.getElementById("send-form").addEventListener("click", (e) => {
     var data = document.querySelector("[name='data']").value
     var message = document.querySelector("[name='message']").value
     var now = new Date(Date.now())
-    var dateFormated = now.toLocaleString('es-ES')
+    var date = now.toLocaleString('es-ES')
 
-    var formData = { name, data, message, dateFormated }
+    var formData = { name, data, message, date }
     
     var result = ""
     try {
