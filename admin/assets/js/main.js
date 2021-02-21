@@ -84,14 +84,3 @@ $(document).ready(function(){
   })
 
 })
-
-
-
-
-
-// TODO salir de la app
-// .then(() => {
-  // Sign-out successful.
-// }).catch((error) => {
-  // An error happened.
-// });
